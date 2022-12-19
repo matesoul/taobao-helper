@@ -99,6 +99,10 @@ let main = () => {
       }
     }
   } else {
+    // 重置结算状态
+    settleStatus = false
+    // 重置提交状态
+    submitStatus = false
     console.log(`当前时间为：${dateFormat('YYYY-mm-dd HH:MM:SS', new Date())} 抢购时间为：${dateFormat('YYYY-mm-dd HH:MM:SS', new Date(buyTime))} 还没到时间`)
   }
 }
